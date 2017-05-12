@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gco-iR-dSm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Gge-mE-T02">
+            <objects>
+                <navigationController id="gco-iR-dSm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l4I-PR-aoP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DcP-ea-9Xy" kind="relationship" relationship="rootViewController" id="3ze-tt-Fml"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="792-B1-jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="91"/>
+        </scene>
+        <!--Tela Principal-->
+        <scene sceneID="ec2-TO-x7I">
+            <objects>
+                <viewController id="DcP-ea-9Xy" customClass="TelaPrincipalViewController" customModule="NavegandoEntreTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WSX-w3-oZP"/>
+                        <viewControllerLayoutGuide type="bottom" id="552-uf-Mpt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7eq-Yq-1xn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m03-cN-6rC">
+                                <rect key="frame" x="168" y="108" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela 1"/>
+                                <connections>
+                                    <segue destination="HBM-K4-6dH" kind="show" id="o71-Zc-lK7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMd-Zl-Su5">
+                                <rect key="frame" x="167" y="285" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela 2"/>
+                                <connections>
+                                    <segue destination="JRk-XI-ZAB" kind="show" id="Nuu-kK-kPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcF-4K-eB2">
+                                <rect key="frame" x="167" y="494" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela 3"/>
+                                <connections>
+                                    <segue destination="thq-9z-KO9" kind="showDetail" id="BrO-Ik-gJI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela Principal" id="QcT-Fx-4y3">
+                        <barButtonItem key="backBarButtonItem" title="Churros" id="Okh-Ud-FfM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIF-KK-1gW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="90"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Kb-J5-nng">
+            <objects>
+                <viewController id="thq-9z-KO9" customClass="ViewController" customModule="NavegandoEntreTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="56q-rn-izJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0q-ST-6Zq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="51i-JZ-3dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT7-8M-B9n">
+                                <rect key="frame" x="164" y="122" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fechar:" destination="thq-9z-KO9" eventType="touchUpInside" id="Wr1-Lg-sBR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wl-A3-cPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="797"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zKj-ym-bDf">
+            <objects>
+                <viewController id="JRk-XI-ZAB" customClass="ViewController" customModule="NavegandoEntreTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ghS-WK-xL2"/>
+                        <viewControllerLayoutGuide type="bottom" id="aYL-DX-Nuz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bJ0-rb-Y4I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU1-yu-lBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="90"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oc2-au-VZd">
+            <objects>
+                <viewController id="HBM-K4-6dH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qtb-Ac-jTT"/>
+                        <viewControllerLayoutGuide type="bottom" id="sNr-hU-sSS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zL8-sy-8Pd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-ea-JF1">
+                                <rect key="frame" x="166" y="275" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela X"/>
+                                <connections>
+                                    <segue destination="cvM-De-Dam" kind="show" id="XKa-7n-vXL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucW-Mj-BVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-443"/>
+        </scene>
+        <!--Tela X-->
+        <scene sceneID="58S-nh-QIT">
+            <objects>
+                <viewController id="cvM-De-Dam" customClass="TelaXViewController" customModule="NavegandoEntreTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ikb-od-dNl"/>
+                        <viewControllerLayoutGuide type="bottom" id="9h9-vd-OWc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMv-AP-V8m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anH-63-Nbt">
+                                <rect key="frame" x="151" y="207" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela Verde"/>
+                                <connections>
+                                    <action selector="abrirVerde:" destination="cvM-De-Dam" eventType="touchUpInside" id="nx1-6C-xzv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tC-0l-paa">
+                                <rect key="frame" x="139" y="409" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela Vermelha"/>
+                                <connections>
+                                    <action selector="abrirVermelha:" destination="cvM-De-Dam" eventType="touchUpInside" id="pou-i0-zV5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tela X" prompt="Abrir Segue Via Código" id="RBz-Ze-Uik"/>
+                    <connections>
+                        <segue destination="jqs-9p-wd6" kind="show" identifier="telaXParaTelaVerdeSegue" id="L56-cY-ZN4"/>
+                        <segue destination="SXd-B9-L8c" kind="show" identifier="telaXParaTelaVermelhoSegue" id="8GM-bj-qHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysW-F4-vSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-621"/>
+        </scene>
+        <!--Tela Vermelha View Controller-->
+        <scene sceneID="XPs-8t-82T">
+            <objects>
+                <viewController id="SXd-B9-L8c" customClass="TelaVermelhaViewController" customModule="NavegandoEntreTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nI2-hU-awX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gDG-NK-YrT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lQN-Br-0B0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBp-i3-tnY">
+                                <rect key="frame" x="32" y="113" width="307" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.37251748014803709" blue="0.38219309124767697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="meuLabel" destination="HBp-i3-tnY" id="DQJ-W3-Y6U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q47-GA-X6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.5999999999999" y="-296.40179910044981"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GDb-Pd-bxK">
+            <objects>
+                <viewController id="jqs-9p-wd6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k68-LA-Zp2"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQd-Pv-9wX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qhA-Z0-3u8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-Ii-rOt">
+                                <rect key="frame" x="73" y="298" width="228" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar Direto Para a Tela Principal"/>
+                                <connections>
+                                    <segue destination="Bhl-Rc-wFZ" kind="unwind" unwindAction="zerarNavegacaoWithSegue:" id="KeM-VW-x2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352503327099666" green="1" blue="0.75952006928077076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfZ-n6-YJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Bhl-Rc-wFZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="-980"/>
+        </scene>
+    </scenes>
+</document>
