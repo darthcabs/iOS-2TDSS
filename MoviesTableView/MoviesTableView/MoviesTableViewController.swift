@@ -13,6 +13,7 @@ class MoviesTableViewController: UITableViewController {
     var movieTitles = ["Gladiator", "The Matrix", "Back To The Future"]
     var movieReleases = ["2000", "1999", "1985"]
     var moviePosters = [#imageLiteral(resourceName: "gladiator"), #imageLiteral(resourceName: "matrix"), #imageLiteral(resourceName: "back-to-the-future")]
+    var indice = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +76,7 @@ class MoviesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indice = indexPath.row
         performSegue(withIdentifier: "movieSegue", sender: self)
     }
     
@@ -100,5 +102,9 @@ class MoviesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let movieDetails = segue.destination as! DetalhesViewController
+        movieDetails.titulo = movieTitles[indice]
+        movieDetails.data = movieReleases[indice]
+        movieDetails.poster = moviePosters[indice]
     }
 }

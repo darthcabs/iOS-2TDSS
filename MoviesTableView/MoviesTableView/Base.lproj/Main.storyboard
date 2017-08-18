@@ -60,7 +60,7 @@
         <!--Detalhes-->
         <scene sceneID="TVm-e5-lq2">
             <objects>
-                <viewController id="kbH-ei-l2i" sceneMemberID="viewController">
+                <viewController id="kbH-ei-l2i" customClass="DetalhesViewController" customModule="MoviesTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IQS-XZ-NXi"/>
                         <viewControllerLayoutGuide type="bottom" id="vy9-e9-Wv8"/>
@@ -68,15 +68,40 @@
                     <view key="view" contentMode="scaleToFill" id="WWQ-fF-TOL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf2-rF-E3h">
+                                <rect key="frame" x="16" y="72" width="343" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-aE-vH8">
+                                <rect key="frame" x="166" y="181" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz4-Bl-c2H">
+                                <rect key="frame" x="67" y="248" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detalhes" id="V2p-Bt-3qu">
                         <barButtonItem key="backBarButtonItem" title="Movies" id="2HN-WO-OtB"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgPoster" destination="Xz4-Bl-c2H" id="UT1-R8-BzG"/>
+                        <outlet property="lblAno" destination="nkh-aE-vH8" id="HZa-ab-GrA"/>
+                        <outlet property="lblTitulo" destination="sf2-rF-E3h" id="Qee-wD-20o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXs-Ax-NGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831" y="135"/>
+            <point key="canvasLocation" x="1829.5999999999999" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C5j-yU-Jnc">

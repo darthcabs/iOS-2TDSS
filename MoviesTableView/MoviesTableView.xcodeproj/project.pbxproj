@@ -13,6 +13,7 @@
 		AC8FCF6C1F3E73B300A74721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8FCF6B1F3E73B300A74721 /* Assets.xcassets */; };
 		AC8FCF6F1F3E73B300A74721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8FCF6D1F3E73B300A74721 /* LaunchScreen.storyboard */; };
 		AC8FCF771F3E740500A74721 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FCF761F3E740500A74721 /* MoviesTableViewController.swift */; };
+		ACC431521F47A79200AFBF88 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC431511F47A79200AFBF88 /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC8FCF6E1F3E73B300A74721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8FCF701F3E73B300A74721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC8FCF761F3E740500A74721 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		ACC431511F47A79200AFBF88 /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AC8FCF661F3E73B300A74721 /* ViewController.swift */,
 				AC8FCF681F3E73B300A74721 /* Main.storyboard */,
 				AC8FCF761F3E740500A74721 /* MoviesTableViewController.swift */,
+				ACC431511F47A79200AFBF88 /* DetalhesViewController.swift */,
 				AC8FCF6B1F3E73B300A74721 /* Assets.xcassets */,
 				AC8FCF6D1F3E73B300A74721 /* LaunchScreen.storyboard */,
 				AC8FCF701F3E73B300A74721 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC431521F47A79200AFBF88 /* DetalhesViewController.swift in Sources */,
 				AC8FCF771F3E740500A74721 /* MoviesTableViewController.swift in Sources */,
 				AC8FCF671F3E73B300A74721 /* ViewController.swift in Sources */,
 				AC8FCF651F3E73B300A74721 /* AppDelegate.swift in Sources */,
@@ -303,6 +307,7 @@
 				AC8FCF751F3E73B300A74721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
